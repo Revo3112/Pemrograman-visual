@@ -5,7 +5,7 @@ rowmax = int(1079)
 colmax = int(1919)
 
 radius_max = int(1000)
-batas1 = int(0.2 * radius_max)
+batas1 = int(0.10 * radius_max)
 batas2 = int(0.4 * radius_max)
 batas3 = int(0.8 * radius_max)
 batas4 = int(radius_max)
