@@ -80,34 +80,34 @@
 
 
 
-import numpy as np
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
+# import numpy as np
+# import matplotlib.pyplot as plt
+# from mpl_toolkits.mplot3d import Axes3D
 
-def generate_sphere(radius, num_points):
-    u = np.linspace(0, 2 * np.pi, num_points)
-    v = np.linspace(0, np.pi, num_points)
-    x = radius * np.outer(np.cos(u), np.sin(v))
-    y = radius * np.outer(np.sin(u), np.sin(v))
-    z = radius * np.outer(np.ones(np.size(u)), np.cos(v))
-    return x, y, z
+# def generate_sphere(radius, num_points):
+#     u = np.linspace(0, 2 * np.pi, num_points)
+#     v = np.linspace(0, np.pi, num_points)
+#     x = radius * np.outer(np.cos(u), np.sin(v))
+#     y = radius * np.outer(np.sin(u), np.sin(v))
+#     z = radius * np.outer(np.ones(np.size(u)), np.cos(v))
+#     return x, y, z
 
-def main():
-    radius = 1.0
-    num_points = 100
-    x, y, z = generate_sphere(radius, num_points)
+# def main():
+#     radius = 100
+#     num_points = 1000
+#     x, y, z = generate_sphere(radius, num_points)
 
-    fig = plt.figure()
-    ax = fig.add_subplot(111, projection='3d')
-    ax.plot_surface(x, y, z, color='b', alpha=0.5)
+#     fig = plt.figure()
+#     ax = fig.add_subplot(111, projection='3d')
+#     ax.plot_surface(x, y, z, color='b', alpha=0.5)
 
-    ax.set_xlabel('X')
-    ax.set_ylabel('Y')
-    ax.set_zlabel('Z')
-    ax.set_title('Visualisasi Bola')
+#     ax.set_xlabel('X')
+#     ax.set_ylabel('Y')
+#     ax.set_zlabel('Z')
+#     ax.set_title('Visualisasi Bola')
 
-    plt.show()
+#     plt.show()
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
